@@ -1,0 +1,136 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #f1f2f6;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+header{
+   
+    background-color: #e3a60a;
+    display: flex;
+  
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+header h1{
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+form.create-note{
+    position: relative;
+     width: 480px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+margin: 30px auto 20px auto;
+    cursor: pointer;
+    transition:.5s ease all ;
+    transform: scale(.9) translateY(-1rem);
+    border-radius: 7px;
+}
+form.create-note:hover{
+    transform: scale(1) translateY(0rem)!important;;
+    opacity: 1;
+    visibility: visible!important;
+}
+form.create-note::before{
+    content: '';
+   
+    background-color: #e3a60a;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition:.5s ease all ;
+    transform: scale(0) translateY(-1rem)!important;;
+    opacity: 0;
+    visibility: none!important;
+}
+form.create-note input, textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 4px;
+    font-size: 1.2em;
+    color: #050404;
+    resize: none;
+}
+form.create-note button{
+    position: absolute;
+    right: 18px;
+    bottom: 0;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 35px;
+    background: #e3a60a;
+    font-size: 1.2em;
+    color: #1f1d1d;
+    cursor: pointer;
+    transition:.5s ease all ;
+
+
+}
+
+
+.note.editing input,
+.note.editing textarea {
+  background-color: #f0f0f0; /* Change input and textarea background color */
+  border: 1px solid #ccc; /* Add a border to input and textarea */
+}
+
+.note button.edit-button {
+  position: absolute;
+  right: 60px; /* Adjust the positioning as needed */
+  bottom: 0;
+  
+}
+
+
+.note{
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 10px;
+    width: 240px;
+    margin: 16px;
+    float: left;
+    transition:.5s ease all ;
+    transform: scale(.9) translateY(-1rem);
+
+}
+.note button{
+    position: absolute;
+    right: 18px;
+    bottom: 0;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    width: 35px;
+    background: #e3a60a;
+    font-size: 1.2em;
+    color: #1f1d1d;
+    cursor: pointer;
+    transition:.5s ease all ;
+}
+Footer{
+    position: absolute;
+    text-align: center;
+    background-color: #edaf13;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    height:2.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+footer p{
+    margin: 0;
+    color: white;
+}
