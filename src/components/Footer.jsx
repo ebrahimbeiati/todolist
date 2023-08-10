@@ -3,19 +3,15 @@ import React from 'react';
 
 const date = new Date();
 
-
-
-
-
 const Footer = () => {
-  return (
-    <footer>
-      <p>Copyright {date.getFullYear()}</p>
-      <p>All rights reserved</p>
+return (
+<footer>
+    <p>Copyright {date.getFullYear()}</p>
+    <p>All rights reserved</p>
 
 
-    </footer>
-  )
+</footer>
+)
 }
 
 export default Footer;
