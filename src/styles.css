@@ -47,7 +47,6 @@ form.create-note::before{
     top: 0;
     left: 0;
     z-index: -1;
-   
     transition:.5s ease all ;
     transform: scale(0) translateY(-1rem)!important;
     opacity: 0;
@@ -57,7 +56,6 @@ form.create-note input, textarea{
     width: 100%;
     padding: 20px;
     border: 1px solid;
-
     outline: none;
     border-radius: 10px;
     font-size: 1.2em;
@@ -87,7 +85,7 @@ form.create-note button{
  
    width: 100%;
     padding: 20px;
-    border: none;
+    border: 1px solid ;
     outline: none;
     border-radius: 10px;
     font-size: 1.2em;
