@@ -27,8 +27,9 @@ header h1{
 }
 form.create-note{
     position: relative;
-     width: 480px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 15px;
+     width: 520px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.3);
 margin: 30px auto 20px auto;
     cursor: pointer;
     transition:.5s ease all ;
@@ -42,21 +43,23 @@ form.create-note:hover{
 }
 form.create-note::before{
     content: '';
-   
     background-color: #e3a60a;
     top: 0;
     left: 0;
     z-index: -1;
+   
     transition:.5s ease all ;
-    transform: scale(0) translateY(-1rem)!important;;
+    transform: scale(0) translateY(-1rem)!important;
     opacity: 0;
     visibility: none!important;
 }
 form.create-note input, textarea{
     width: 100%;
-    border: none;
+    padding: 20px;
+    border: 1px solid;
+
     outline: none;
-    padding: 4px;
+    border-radius: 10px;
     font-size: 1.2em;
     color: #050404;
     resize: none;
@@ -64,7 +67,7 @@ form.create-note input, textarea{
 form.create-note button{
     position: absolute;
     right: 18px;
-    bottom: 0;
+    bottom: 10;
     border: none;
     outline: none;
     border-radius: 50%;
@@ -81,15 +84,33 @@ form.create-note button{
 
 .note.editing input,
 .note.editing textarea {
-  background-color: #f0f0f0; /* Change input and textarea background color */
-  border: 1px solid #ccc; /* Add a border to input and textarea */
+ 
+   width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    color: #050404;
+    resize: none;
 }
 
 .note button.edit-button {
   position: absolute;
   right: 60px; /* Adjust the positioning as needed */
-  bottom: 0;
+  bottom: 10px;
   
+}
+.note button.delete-button{
+    position: absolute;
+    bottom: 10px;
+    border-radius: 50%;
+    width: 35px;
+    background: #ebbd05;
+    font-size: 1.2em;
+    color: #0d0b0b;
+    cursor: pointer;
+   
 }
 
 
@@ -97,7 +118,7 @@ form.create-note button{
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    padding: 10px;
+    padding: 20px;
     width: 240px;
     margin: 16px;
     float: left;

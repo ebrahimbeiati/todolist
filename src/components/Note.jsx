@@ -23,35 +23,35 @@ setIsEditing(false);
 };
 
 return (
-<div className={`note ${isEditing ? "editing" : ""}`}>
+  <div className={`note ${isEditing ? "editing" : ""}`}>
     {isEditing ? (
-    <>
+      <>
         <input
-        type="text"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
+          type="text"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
         />
         <textarea
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
+          value={content}
+          onChange={(e) => setContent(e.target.value)}
         />
         <button onClick={handleSave}>
-        <SaveAsIcon />
+          <SaveAsIcon />
         </button>
-    </>
+      </>
     ) : (
-    <>
+      <>
         <h1>{title}</h1>
         <p>{content}</p>
         <button className="edit-button" onClick={handleEdit}>
-        <EditIcon />
+          <EditIcon />
         </button>
-        <button onClick={onDelete}>
-        <DeleteIcon />
+        <button className="delete-button"  onClick={onDelete}>
+          <DeleteIcon />
         </button>
-    </>
+      </>
     )}
-</div>
+  </div>
 );
 };
 
